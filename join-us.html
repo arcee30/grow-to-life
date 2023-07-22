@@ -65,6 +65,29 @@
         <div class="contact-right">
           <h2 class="heading-6-copy">Volunteer Sign Up Form</h2>
           <p>Tell us about you so we can get you signed up. For in-person jobs, only volunteers from or near Chapel Hill, North Carolina, are allowed. </p>
+
+          <form name="contact" method="POST" data-netlify="true">
+  <p>
+    <label>Your Name: <input type="text" name="name" /></label>
+  </p>
+  <p>
+    <label>Your Email: <input type="email" name="email" /></label>
+  </p>
+  <p>
+    <label>Your Role: <select name="role[]" multiple>
+      <option value="leader">Leader</option>
+      <option value="follower">Follower</option>
+    </select></label>
+  </p>
+  <p>
+    <label>Message: <textarea name="message"></textarea></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
+
+          
           <div class="w-form">
             <form id="email-form" name="email-form" data-netlify="true" data-name="Email Form" method="get" data-wf-page-id="6499ee4285cc4e4093e10e1e" data-wf-element-id="93a4217e-aef6-9334-5d25-dce46fdf0f16"><input type="text" class="input w-input" maxlength="256" name="name-3" data-name="Name 3" placeholder="Enter your name" id="name-3"><input type="email" class="input w-input" maxlength="256" name="email-3" data-name="Email 3" placeholder="Enter your email address" id="email-3" required=""><input type="tel" class="input w-input" maxlength="256" name="Phone" data-name="Phone" placeholder="Enter your phone number (optional)" id="Phone-2"><textarea placeholder="Tell us what you&#x27;d like to do" maxlength="5000" id="Message-3" name="Message-3" data-name="Message 3" required="" class="input w-input"></textarea><input type="submit" value="Submit" data-wait="Please wait..." class="btn w-button"></form>
             <div class="success w-form-done">
